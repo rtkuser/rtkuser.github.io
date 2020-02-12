@@ -182,3 +182,24 @@ only screen and (min-resolution: 3dppx) { /* для нормальных бра�
     background-image: url(access/img/tutorial-3-copy-4@3x.png);
   }
 }
+
+.footer {
+  border: 1px solid #000;
+}
+
+@media (prefers-color-scheme: light) {
+  .footer {
+      border: 5px solid red;
+      background-color: red;
+      color: white;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .footer {
+      border: 5px solid orange;
+      background-color: orange;
+      color: white;
+  }
+}
