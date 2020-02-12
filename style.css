@@ -1,0 +1,182 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+body {
+  background: #f1f3f5;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-device * {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+}
+
+.iphone .main {
+  background-image: url(access/img/tutorial-3-copy.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.android .main {
+  background-image: url(access/img/tutorial-3-copy-4.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.portrait {
+  display: block;
+}
+
+.landscape {
+  display: none;
+}
+
+@media screen and (orientation: landscape) {
+  .main {
+    background-size: contain;
+  }
+  .portrait {
+    display: none;
+  }
+  
+  .landscape {
+    display: block;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-header {
+  margin-top: -1px;
+  background: #7700ff;
+  bottom: 0;
+  width: 100%;
+}
+
+.wrapper-button {
+  max-width: 335px;
+  margin: 0 auto;
+}
+
+.button {
+  height: 44px;
+  border-radius: 5px;
+  background-color: #ff4f12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 40px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+  text-align: center;
+  margin-bottom: 12px;
+
+  font-family: BasisGrotesquePro;
+  font-size: 17px;
+  line-height: 1.41;
+  color: #ffffff;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+.title {
+  font-family: BasisGrotesquePro;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.19;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+.sub-title, a {
+  margin: 0 auto;
+  font-family: BasisGrotesquePro;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+
+
+@media screen and (min-width: 375px) {
+  .title {
+    font-size: 27px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .button {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (-o-min-device-pixel-ratio: 2/1), 
+only screen and (min-resolution: 192dpi), 
+only screen and (min-resolution: 2dppx) { /* для нормальных браузеров */
+  .iphone .main,
+  .android .main {
+    background-size: contain;
+  }
+
+  .iphone .main {
+    background-image: url(access/img/tutorial-3-copy@2x.png);
+  }
+
+  .android .main {
+    background-image: url(access/img/tutorial-3-copy-4@2x.png);
+  }
+}
+
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 3), 
+only screen and (-o-min-device-pixel-ratio: 3/1), 
+only screen and (min-resolution: 288dpi), 
+only screen and (min-resolution: 3dppx) { /* для нормальных браузеров */
+  .iphone .main,
+  .android .main {
+    background-size: contain;
+  }
+
+  .iphone .main {
+    background-image: url(access/img/tutorial-3-copy@3x.png);
+  }
+
+  .android .main {
+    background-image: url(access/img/tutorial-3-copy-4@3x.png);
+  }
+}
