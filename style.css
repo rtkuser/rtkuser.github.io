@@ -69,6 +69,7 @@ body {
   background: #7700ff;
   bottom: 0;
   width: 100%;
+  z-index: 9;
 }
 
 .wrapper-button {
@@ -131,6 +132,9 @@ a:active {
   margin-bottom: 12px;
 }
 
+.sub-title, a:focus {
+  outline: none;
+}
 
 
 @media screen and (min-width: 375px) {
